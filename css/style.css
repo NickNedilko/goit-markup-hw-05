@@ -22,6 +22,9 @@ img {
      text-decoration: none;
      padding: 0px;
      color: #AFB1B8;
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    
     }
 
 .list{
@@ -188,20 +191,36 @@ fill: currentColor;
     text-transform: uppercase;
 
     color: #FFFFFF;
+
+    
 }
 
 .button{
     padding: 6px 22px;
-    
     font-family: inherit;
     display: inline-block; 
     font-size: 16px;
     font-weight: 500;
+    border-radius: 4px;
+    border-color:transparent;
     align-items: center;
     line-height: 1.88;
     letter-spacing: 0.06em;
     text-align: center;
     cursor:  pointer;
+   
+    
+    transition: color 2150ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 2150ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: box-shadow 2150px cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover, .button:focus{
+    color:#FFFFFF;
+    background-color: #188CE8;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .main.button{
@@ -212,19 +231,11 @@ fill: currentColor;
     background-color: #2196F3;
     border: 0px;
 
-    color:#FFFFFF ;
-}
-.button:hover, .button:focus{
-    border-radius: 4px;
-    border-color:transparent;
-    
-
     color:#FFFFFF;
-    background: #188CE8;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-    0px 1px 2px rgba(0, 0, 0, 0.08),
-     0px 2px 2px rgba(0, 0, 0, 0.12);
+
 }
+
+
 /* стилизация секции наши качества */
 .qualites-section{
     padding-top: 94px;
@@ -296,6 +307,28 @@ fill: currentColor;
 .images{
     margin-left: 30px;
     width: 370px;
+    position: relative;
+}
+.text-box{
+    position: absolute;
+    bottom: 0px;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    
+}
+.text-images{
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.17;
+    color: rgba(255, 255, 255, 1)
+
+  
 }
             /* Стилизация секции наша команда */
 
@@ -361,9 +394,11 @@ fill: currentColor;
     align-items: center;
     width: 44px;
     height: 44px;
-
     fill: currentColor;
     border-radius: 50%;
+    
+    transition: fill 2150ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 2150ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
 .icon-link:hover, .icon-link:focus{
@@ -376,9 +411,11 @@ fill: currentColor;
  .clients{
     padding-bottom: 94px;
     padding-top: 94px;
+    
  }
  .list-company{
     margin-right: 30px;
+    
  }
  .list-company:last-child{
     margin-right: 0px;
@@ -395,10 +432,13 @@ fill: currentColor;
  .button-icon{
     fill: #afb1b8;
     display: block;
-    box-sizing: content-box;
+    box-sizing: border-box;
     padding: 16px 32px;
     outline: 1px solid #AFB1B869;
     border-radius: 4px;
+
+    transition: outline 2150ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
  .button-icon:hover, .button-icon:focus{
     fill: #2196f3;
@@ -475,6 +515,8 @@ fill: currentColor;
     fill: #fff;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon-link:hover, .footer-icon-link:focus{
@@ -536,6 +578,10 @@ fill: currentColor;
 .item-description {
     padding: 20px 24px;
 }
+.portfolio-item{
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .portfolio-item:hover{
     cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
