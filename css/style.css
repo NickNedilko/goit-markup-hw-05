@@ -13,6 +13,7 @@ body{
     letter-spacing: 0.03em;
     }
 /* Свойства для корректного отображения картинок */
+
 img {
 	display: block;
 	max-width: 100%;
